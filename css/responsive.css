@@ -111,8 +111,8 @@
             margin-left: -40px;
             margin-right: -40px;
         }
-        .nav{
-            height: 80px;
+        .ticket-5,.ticket-10{
+            display:none
         }
         
 	}
