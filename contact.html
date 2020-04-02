@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <script src="js/jquery.min.js"></script>
+   
+
+</head>
+  <body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo ">
+                <img src="pics/lgog.png" alt="logo">  
+            </div>
+            <div id="mainListDiv" class="main_list mt-5">
+                <ul class="navlinks">
+             
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html" >About Us</a></li>
+                    <li><a href="contact.html" >Contact Us</a></li>
+                    <li><a href="#" >Result Page</a></li>
+                    <li class="login-button"><a href="login.html" > <i class="fa fa-user" aria-hidden="true"></i> Login</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger ">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home contact-us-home" id="home">
+        <div class="tag-div ">
+            <h1 class="tag-no-line  mb-5 text-center">Contact Us</h1>
+            <p class="text-center">Home/Contact US</p>
+        </div>
+
+    </section>
+
+    <div class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Get In Touch</h1>
+                    <p>You have a question or a int for us? Write us a message we are here for you.</p>
+                    <form >
+                        <input type="text" name="name" id="name" placeholder="Name"><br>
+                        <input type="email" name="email" id="email" placeholder="Email"><br>
+                        <input type="text" name="subject" id="subject" placeholder="Subject"><br>
+                        <textarea name="message" id="message"  placeholder="Message"></textarea><br>
+                        <input type="submit" value="Submit Message" id="submit">
+                    </form>
+                </div>
+                <div class="col-md-6">
+                  <img src="pics/laptop.jpg" alt="laptop" id="laptop" width="100%" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+  <div class="main-footer text-white">
+    <div class="row p-5">
+      <div class="col-md-3">
+        <img src="pics/lgog.png" alt="logo" width="230">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum aliquid itaque dolorem doloremque dolorum iure, sint quaerat nulla assumenda aut quo mollitia reprehenderit velit nobis magni ducimus possimus molestias at.</p>
+      </div>
+
+      <div class="col-md-3 footer-links">
+        <h3>Important Links</h3>
+        <nav >
+          <ul class="nav-ul">
+            <li class="nav-li"><a href="#" class="li-a">Home</a></li>
+            <li class="nav-li"><a href="#" class="li-a">About Us</a></li>
+            <li class="nav-li"><a href="#" class="li-a">Contact Us</a></li>
+            <li class="nav-li"><a href="#" class="li-a">Result Page</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-3 footer-contact" >
+        <h3 class="pb-5">Contact Info</h3>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <p >hello@easytagged.com</p>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <p>+49-152-5551-198</p>
+      </div>
+
+      <div class="col-md-3 footer-email" >
+        <h3 class="pb-5">News Letter</h3>
+        <p>Subscribe to our lews letter to get our daily updates.</p>
+        <input type="email" name="email" id="email" placeholder="Email"> <br>
+        <input type="submit" value="Subscribe" id="subscribe">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+
+            $('.navTrigger').click(function () {
+        $(this).toggleClass('active');
+        console.log("Clicked menu");
+        $("#mainListDiv").toggleClass("show_list");
+        $("#mainListDiv").fadeIn();
+
+    });
+
+
+    </script>
+    <!--start top header add-->
+
+
+        
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="dist/owl.carousel.min.js"></script>
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+  </body>
+</html>
