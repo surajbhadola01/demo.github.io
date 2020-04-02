@@ -89,6 +89,10 @@
         }
         .contact-us .container .row{
             padding: 5px;
+            padding-top: 30px;
+        }
+        .contact-us .container .row input{
+            margin-bottom: 20px;
         }
         .about-home h1{
             font-size:50px;;
@@ -102,9 +106,13 @@
         .sign-up h1{
             display: none;
         }
-        .sign-up .row{
+
+        .sign-up .row , .contact-us .row{
             margin-left: -40px;
             margin-right: -40px;
+        }
+        .nav{
+            height: 80px;
         }
         
 	}
