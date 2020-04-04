@@ -15,15 +15,17 @@ body {
 
 .nav {
     width: 100%;
-    height: 113px;
+    height: 65px;
     position: fixed;
     line-height: 65px;
     text-align: center;
 }
 
-.nav div.logo{
+.nav div.logo {
     float: left;
-    width: 130px !important;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
 }
 
 .nav div.logo a {
@@ -33,7 +35,7 @@ body {
 }
 
 .nav div.logo a:hover {
-    color: #00E676;
+    color: #FF0000;
 }
 
 .nav div.main_list {
@@ -65,13 +67,19 @@ body {
 }
 
 .nav div.main_list ul li a:hover {
-    color: #00E676;
+    color: #FF0000;
 }
 
 
 /* Home section */
 
-
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../pics/low_man_holding_phone_2.jpg);
+    background-position: center top;
+	background-size:cover;
+}
 
 .navTrigger {
     display: none;
@@ -116,7 +124,7 @@ body {
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: #111;
         /*same background color of navbar*/
         background-position: center top;
     }
@@ -334,6 +342,10 @@ body {
 }
 
 
+
+
+
+
 .myH2 {
 	text-align:center;
 	font-size: 4rem;
@@ -349,101 +361,312 @@ body {
 		padding:2%;
 	}
 }
-
-
-
-.home {
-    width: 100%;
-    height: 90vh;
-    background-image: url(../pics/low_man_holding_phone_2.jpg);
-    background-position: center top;
-    background-size:cover;
-    padding-top: 150px;
-    padding-left: 70px;
-}
 .nav{
-    z-index: 10000;
+    z-index: 1000;
 }
+/* tah number css*/
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.main-tag-div {
+    width:70%;
+}
+.home .main-tag-div{
+    padding: 2em 0;
+}
+.main-tag-div .search-box{
+    display: flex;
+    justify-content: center;
 
-.login-button{
-    padding: 0px 30px !important;
-    border: none;
-    background-color: red;
-    color: #fff;
-    border-radius: 55px 55px 55px 55px;
-    -moz-border-radius: 55px 55px 55px 55px;
-    -webkit-border-radius: 55px 55px 55px 55px;
-    border: 0px solid #000000;
-}
-.tag-div{
-    position: absolute;
-    top:40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #fff;
-}
-.search-box{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     color: #fff; 
-    -webkit-box-shadow: 1px 9px 39px -2px rgba(255,255,255,1);
-    -moz-box-shadow: 1px 9px 39px -2px rgba(255,255,255,1);
-    box-shadow: 1px 9px 39px -2px rgba(255,255,255,1);
 }
-.search-box .input-tag{
-    width: 450px;
+.main-tag-div .search-box .input-tag{
+    width: 60%;
     height: 50px;
     font-size: 20px !important;
 }
-.search-box .submit-tag{
-    width: 120px;
-    height: 50px;
-    font-size: 16px;
+.main-tag-div .search-box .submit-tag{
+    width: 20%;
+    height: auto;
+    font-size: 1.3em;
     font-weight: bold;
     background-color: red;
     border:none;
     color: #fff;
 }
-.tag-no-line{
-    font-size: 60px;;
-}
-
-/* card content*/
-.card-content1{
-    position:relative;
-    top: -120px;
-}
-.card-body{
-
-    -webkit-box-shadow: -2px 17px 19px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 17px 19px -2px rgba(0,0,0,0.75);
-    box-shadow: -2px 17px 19px -2px rgba(0,0,0,0.75);
-}
-.fafa-box{
+.main-tag-div .tag-no-line{
+    width: 100%;
+    
+    color: #fff;
     text-align: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: rgb(255, 191, 180);
-    position: absolute;
-    top:35%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
-.fafa-box i{
-    line-height: 60px;
-    color: tomato;
-}
-.card-text{
-    margin-top: 140px;
-    margin-bottom: 20px !important;
-    font-size: 15px;
-    font-weight: bold;
+.h1, h1 {
+    font-size: 6vw !important;
 }
 
+/*1st card layer cards  */
+
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+span, a, a:hover {
+display: inline-block;
+text-decoration: none;
+color: inherit;
+}
+
+.extra-text {
+font-size:34px;
+font-weight: 700;
+color:#2f2f2f;
+margin-bottom: 25px;
+position:relative;
+text-transform: none;
+}
+.extra-text::before {
+content: '';
+width: 60px;
+height: 3px;
+background: #f91942;
+position: absolute;
+left: 0px;
+bottom: -10px;
+right: 0;
+margin: 0 auto;
+}
+.extra-text span {
+font-weight: 700;
+color:#f91942;
+}
+.item {
+    font-weight: bold;
+background: #fff;
+text-align: center;
+padding: 30px 25px;
+-webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+border-radius: 20px;
+border:5px solid rgba(0, 0, 0, 0.07);
+margin-bottom: 30px;
+-webkit-transition: all .5s ease 0;
+transition: all .5s ease 0;
+transition: all 0.5s ease 0s;
+
+}
+.insta-item{
+    height: 350px;;
+}
+.item:hover{
+background:#f91942;
+box-shadow:0 8px 20px 0px rgba(0, 0, 0, 0.2);
+-webkit-transition: all .5s ease 0;
+transition: all .5s ease 0;
+transition: all 0.5s ease 0s;
+}
+.item:hover .item, .item:hover span.icon{
+background:#fff;
+border-radius:10px;
+-webkit-transition: all .5s ease 0;
+transition: all .5s ease 0;
+transition: all 0.5s ease 0s;
+}
+.item:hover h6, .item:hover p{
+color:#fff;
+-webkit-transition: all .5s ease 0;
+transition: all .5s ease 0;
+transition: all 0.5s ease 0s;
+}
+.item .icon {
+font-size: 40px;
+margin-bottom:25px;
+color: #f91942;   
+width: 90px;
+height: 90px;
+line-height: 96px;
+border-radius: 50px;
+}
+.item .feature_box_col_one{
+background:rgba(247, 198, 5, 0.20);
+color:#f91942
+}
+.item .feature_box_col_two{
+background:rgba(255, 77, 28, 0.15);
+color:#f91942
+}
+.item .feature_box_col_three{
+background:rgba(0, 147, 38, 0.15);
+color:#f91942
+}
+.item .feature_box_col_four{
+background:rgba(0, 108, 255, 0.15);
+color:#f91942
+}
+.item .feature_box_col_five{
+background:rgba(146, 39, 255, 0.15);
+color:#f91942
+}
+.item .feature_box_col_six{
+background:rgba(23, 39, 246, 0.15);
+color:#f91942
+}
+.item p{
+font-size:15px;
+line-height:26px;
+}
+.item h6 {
+margin-bottom:20px;
+color:#2f2f2f;
+}
+.mission p {
+margin-bottom: 10px;
+font-size: 15px;
+line-height: 28px;
+font-weight: 500;
+}
+.mission i {
+display: inline-block;
+width: 50px;
+height: 50px;
+line-height: 50px;
+text-align: center;
+background: #f91942;
+border-radius: 50%;
+color: #fff;
+font-size: 25px;
+}
+.mission .small-text {
+margin-left: 10px;
+font-size: 13px;
+color: #666;
+}
+.skills {
+padding-top:0px;
+}
+.skills .prog-item {
+margin-bottom: 25px;
+}
+.skills .prog-item:last-child {
+margin-bottom: 0;
+}
+.skills .prog-item p {
+font-weight: 500;
+font-size: 15px;
+margin-bottom: 10px;
+}
+.skills .prog-item .skills-progress {
+width: 100%;
+height: 10px;
+background: #e0e0e0;
+border-radius:20px;
+position: relative;
+}
+.skills .prog-item .skills-progress span {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+background: #f91942;
+width: 10%;
+border-radius: 10px;
+-webkit-transition: all 1s;
+transition: all 1s;
+}
+.skills .prog-item .skills-progress span:after {
+content: attr(data-value);
+position: absolute;
+top: -5px;
+right: 0;
+font-size: 10px;
+font-weight:600;    
+color: #fff;
+background:rgba(0, 0, 0, 0.9);
+padding: 3px 7px;
+border-radius: 30px;
+}
+.feat{
+    position: relative;
+    top:-200px;
+}
+.section-head {
+    margin-bottom: 60px;
+  }
+  .section-head h4 {
+    position: relative;
+    padding:0;
+    color:#f91942;
+    line-height: 1;
+    letter-spacing:0.3px;
+    font-size: 34px;
+    font-weight: 700;  
+    text-align:center;
+    text-transform:none;
+    margin-bottom:30px;
+  }
+  .section-head h4:before {
+    content: '';
+    width: 195px;
+    height: 3px;
+    background: #f91942;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right:0;  
+    margin:0 auto;
+  }
+  .section-head h4 span {
+    font-weight: 700;
+    padding-bottom: 5px;
+    color:#2f2f2f
+  }
+  p.service_text{
+    color:#cccccc !important;
+    font-size:16px;
+    line-height:28px;
+    text-align:center;    
+  }
+  .section-head p, p.awesome_line{
+    color:#818181;
+    font-size:16px;
+    line-height:28px;
+    text-align:center;  
+  }
+
+/* about-us */
 /*abiout us*/
 .about-us-h1{
     font-size: 40px;
@@ -461,21 +684,6 @@ body {
 }
 .test{
     border: 2px solid red;;
-}
-
-/*instagram cards*/
-.instagram-h1{
-    font-size: 40px;
-}
-.card-content .card-body{
-    margin-left: 17%;
-    width: 70%;
-    -webkit-box-shadow: -2px 17px 19px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 17px 19px -2px rgba(0,0,0,0.75);
-    box-shadow: -2px 17px 19px -2px rgba(0,0,0,0.75);
-}
-.card{
-    border:none !important;
 }
 
 /*tickets css*/
@@ -516,6 +724,7 @@ body {
     font-family: 'Sen', cursive;
     font-size: 77px;
 }
+
 /*footer csss*/
 .main-footer{
     background-color: #000;
@@ -575,235 +784,3 @@ body {
 #card-one{
     display: none;
 }
-/*blur images*/
-.blur{
-    filter: blur(1px);
-    transition: all 1s;
-}
-
-
-/*contact us css*/
-.contact-us-home .tag-no-line{
-    font-size: 120px;
-}
-.contact-us-home p{
-    font-size: 50px;
-}
-.contact-us .container{
-    font-family: 'Poppins', sans-serif;
-    padding: 50px;
-    border: none;
-    background-color: #fff;
-
-}
-.contact-us .container h1{
-    font-size: 30px;
-}
-.contact-us .container p{
-    font-size: 16px;
-}
-.contact-us .container input , #message {
-    padding:20px;
-    border:none;
-    border-bottom: 2px solid red;
-    width : 90%;
-    height:50px;
-    font-size:20px;
-    outline: none;
-}
-.contact-us .container  #message{
-    height:160px;
-}
-.contact-us .container  #submit{
-    padding-bottom: 47px;
-    margin-top: 20px;
-    background-color: red;
-    color:#fff;
-    border-radius: 55px 55px 55px 55px;
-}
-.contact-us .container .row{
-    padding: 20px;
-    background-color: #fff;
-    z-index: 100;
-    position: relative;
-    top:-140px;
-}
-
-/*about-home*/
-.about-home {
-    background-image: url(../pics/friend.jpg);
-}
-
-.about-home h1{
-    font-size:120px;;
-}
-.about-home p{
-    font-size: 40px;;
-}
-
-
-/*signup-home*/
-.sign-up-home{
-    width: 100%;
-    background-image: url(../pics/signup_banner.jpg);
-    background-position: center;
-    background-size: cover;
-    
-}
-
-.sign-up p{
-    letter-spacing: 1px;
-    font-weight: bold;
-}
-.sign-up span{
-    color:red;
-}
-.sign-up .row{
-    margin-left: -50px;
-    margin-right: -50px;
-}
-
-.sign-up input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    background: #f01515;
-    border: #7f83a2 1px solid;
- }
-
- .main { 
-    display: block; 
-    position: relative; 
-    padding-left: 45px; 
-    margin-bottom: 15px; 
-    cursor: pointer; 
-    font-size: 16px; 
-} 
-  
-/* Hide the default checkbox */ 
-input[type=checkbox] { 
-    visibility: hidden; 
-} 
-  
-/* Creating a custom checkbox 
-based on demand */ 
-.geekmark { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    height: 25px; 
-    width: 25px; 
-    background-color: rgb(255, 20, 20); 
-} 
-  
-/* Specify the background color to be 
-shown when hovering over checkbox */ 
-
-  
-/* Specify the background color to be 
-shown when checkbox is active */ 
-.main input:active ~ .geekmark { 
-    background-color: red; 
-} 
-  
-/* Specify the background color to be 
-shown when checkbox is checked */ 
-.main input:checked ~ .geekmark { 
-    background-color: rgb(245, 188, 188); 
-} 
-  
-/* Checkmark to be shown in checkbox */ 
-/* It is not be shown when not checked */ 
-.geekmark:after { 
-    content: ""; 
-    position: absolute; 
-    display: none; 
-} 
-  
-/* Display checkmark when checked */ 
-.main input:checked ~ .geekmark:after { 
-    display: block; 
-} 
-  
-/* Styling the checkmark using webkit */ 
-/* Rotated the rectangle by 45 degree and  
-showing only two border to make it look 
-like a tickmark */ 
-.main .geekmark:after { 
-    left: 8px; 
-    bottom: 5px; 
-    width: 6px; 
-    height: 12px; 
-    border: solid white; 
-    border-width: 0 4px 4px 0; 
-    -webkit-transform: rotate(45deg); 
-    -ms-transform: rotate(45deg); 
-    transform: rotate(45deg); 
-} 
-.signup-form a{
-    color:red;
-}
-.signup-form input{
-    margin-bottom: 25px;
-}
-/*login-css*/
-.login-home{
-    width: 100%;
-    background-image: url(../pics/login_banner.jpg);
-    background-position: center;
-    background-size: cover;
-    
-}
-.login-home a{
-    color:red;
-}
-
-/*fa fa icon*/
-.btn{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: #f1f1f1 !important;
-    margin: 10px;
-    border-radius: 30% !important;
-    box-shadow: 0 5px 15px -5px #00000070;
-    color: #3498db;
-    overflow: hidden;
-    position: relative;
-    z-index: 1000;
-  }
-  .btn i{
-    line-height: 35px;
-    font-size: 20px;
-    transition: 0.2s linear;
-  }
-  .btn:hover i{
-    transform: scale(1.3);
-    color: #f1f1f1;
-  }
-  .btn::before{
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    background: #3498db;
-    transform: rotate(45deg);
-    left: -110%;
-    top: 90%;
-  }
-  .btn:hover::before{
-    animation: aaa 0.7s 1;
-    top: -10%;
-    left: -10%;
-  }
-  @keyframes aaa {
-    0%{
-      left: -110%;
-      top: 90%;
-    }50%{
-      left: 10%;
-      top: -30%;
-    }100%{
-      top: -10%;
-      left: -10%;
-    }
-  }
